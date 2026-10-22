@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <!-- 远程源：GitHub 个人地址前缀 -->
-  <remote name="github" fetch="git@github.com:svdssv/" />
+  <remote name="github" fetch="git@github.com:svdssv" />
 
   <!-- 默认规则：默认远程源、默认同步分支 -->
   <default remote="github" revision="master" />
