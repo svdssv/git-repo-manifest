@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <!-- 远程源：GitHub 个人地址前缀 -->
-  <remote name="github" fetch="git@github.com:svdssv" />
+  <!-- 标准 ssh:// 格式地址，避免旧版 repo 拼接异常 -->
+    <remote name="github" fetch="ssh://git@github.com/svdssv/" />
+	  <default remote="github" revision="master" />
 
-  <!-- 默认规则：默认远程源、默认同步分支 -->
-  <default remote="github" revision="master" />
+	    <project name="test1" path="test1" />
+		  <project name="test2" path="test2" />
+		  </manifest>
 
-  <!-- 子仓库列表 -->
-  <project name="test1" path="test1" />
-  <project name="test2" path="test2" />
-</manifest>
