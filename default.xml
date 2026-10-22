@@ -7,6 +7,6 @@
   <default remote="github" revision="master" />
 
   <!-- 子仓库列表 -->
-  <project name="test1.git" path="test1" />
-  <project name="test2.git" path="test2" />
+  <project name="test1" path="test1" />
+  <project name="test2" path="test2" />
 </manifest>
