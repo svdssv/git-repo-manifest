@@ -1,17 +1,12 @@
-cat > default.xml << 'EOF'
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <!-- 远程源：统一前缀为 GitHub 你的个人地址 -->
+  <!-- 远程源：GitHub 个人地址前缀 -->
   <remote name="github" fetch="git@github.com:svdssv/" />
 
-  <!-- 默认规则：默认用 github 远程源，默认同步 master 分支 -->
+  <!-- 默认规则：默认远程源、默认同步分支 -->
   <default remote="github" revision="master" />
 
-  <!-- 子仓库列表
-       name：GitHub 上的仓库名（加 .git 是标准写法）
-       path：同步到本地后显示的文件夹名
-  -->
+  <!-- 子仓库列表 -->
   <project name="test1.git" path="test1" />
   <project name="test2.git" path="test2" />
 </manifest>
-EOF
